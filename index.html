@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Amazon.co.uk Best Sellers</title>
+
+		<link rel="stylesheet" href="css/theme.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile.structure-1.3.2.min.css" />
+
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	</head>
+
+	<body>
+		<div data-role="page" data-theme="a" id="home">
+			<div data-role="panel" data-display="overlay" id="panel">
+				<p>This app shows the top five best sellers at Amazon.co.uk in the Books and Music categories.</p>
+				<p>More categories and features to come...</p>
+				<p><a href="#header" data-rel="close">Close panel</a></p>
+			</div><!-- /panel -->
+			
+			<div data-role="header" data-position="inline">
+				<a href="#panel">About this app</a>
+				<h1><img src="images/amazon-logo-white.png" alt="Amazon.co.uk Best Sellers"/></h1>
+			</div>
+			
+			<div data-role="content" data-theme="a">
+			
+				<!--
+				In the following list, item titles are hardcoded.
+				If the app was pulling live data from Amazon.co.uk, these titles would be inserted here dynamically from the Amazon data.
+				-->
+				
+				<ul data-role="listview">
+					<li data-role="list-divider" data-dividertheme="a">
+						Best Sellers in Books
+					</li>
+					<li>
+						<a href="#book1" data-transition="slide">Alex Ferguson My Autobiography</a>
+					</li>
+					<li>
+						<a href="#book2" data-transition="slide">Diary of a Wimpy Kid: Hard Luck</a>
+					</li>
+					<li>
+						<a href="#book3" data-transition="slide">Demon Dentist - David Walliams</a>
+					</li>
+					<li>
+						<a href="#book4" data-transition="slide">Minecraft: The Official Annual 2014</a>
+					</li>
+					<li>
+						<a href="#book5" data-transition="slide">David Jason: My Life</a>
+					</li>
+					<li data-role="list-divider" data-dividertheme="a">
+						Best Sellers in Music
+					</li>
+					<li>
+						<a href="#cd1" data-transition="slide">Music Of The Night [CD+DVD] - Andre Rieu</a>
+					</li>
+					<li>
+						<a href="#cd2" data-transition="slide">NOW That's What I Call Music! 86</a>
+					</li>
+					<li>
+						<a href="#cd3" data-transition="slide">Midnight Memories [Deluxe Edition] - One Direction</a>
+					</li>
+					<li>
+						<a href="#cd4" data-transition="slide">The Marshall Mathers LP 2 - Eminem</a>
+					</li>
+					<li>
+						<a href="#cd5" data-transition="slide">Reflektor - Arcade Fire</a>
+					</li>
+				</ul>
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<!--
+		In all following subpages, the heading (product title), image (product image) and text (product description) are hardcoded.
+		If the app was pulling live data from Amazon.co.uk, these would be inserted here dynamically from the Amazon data.
+		-->
+
+		<div data-role="page" data-theme="b" id="book1">
+			<div data-role="header" data-position="inline">
+				<h1>Alex Ferguson My Autobiography</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+			
+				<img src="images/0340919396.jpg">
+			
+				<p>Sir Alex announced his retirement as manager of Manchester United after 27 years in the role. He has gone out in a blaze of glory, with United winning the Premier League for the 13th time, and he is widely considered to be the greatest manager in the history of British football.</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="b" id="book2">
+			<div data-role="header" data-position="inline">
+				<h1>Diary of a Wimpy Kid: Hard Luck</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+			
+				<img src="images/0141350679.jpg">
+			
+				<p>The Wimpy Kid is back! In the most hotly-anticipated children's book release of the year, the hilarious, globally-bestselling and award-winning Diary of a Wimpy Kid series, sees BOOK 8 hit our shelves this November!</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="b" id="book3">
+			<div data-role="header" data-position="inline">
+				<h1>Demon Dentist - David Walliams</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+			
+				<img src="images/0007453566.jpg">
+			
+				<p>The new jaw-achingly funny novel from David Walliams, the number one bestselling author! Make your appointment if you dare...</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="b" id="book4">
+			<div data-role="header" data-position="inline">
+				<h1>Minecraft: The Official Annual 2014</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+			
+				<img src="images/1405267674.jpg">
+			
+				<p>You're alone in a strange new world full of hidden dangers. With just your bare hands to mine with, you only have minutes to find food and shelter before darkness falls and the monsters come looking for you...</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="b" id="book5">
+			<div data-role="header" data-position="inline">
+				<h1>David Jason: My Life</h1>
+			</div>
+			
+			<div data-role="content" data-theme="b">
+			
+				<img src="images/1780891407.jpg">
+			
+				<p>Born the son of a Billingsgate market porter at the height of the Second World War, David Jason spent his early life dodging bombs and bullies, both with impish good timing. Giving up on an unloved career as an electrician, he turned his attention to acting and soon, through a natural talent for making people laugh, found himself working with the leading lights of British comedy in the 1960s and '70s: Eric Idle, Michael Palin, Bob Monkhouse and Ronnie Barker. Barker would become a mentor to David, leading to hugely successful stints in Porridge and Open All Hours.</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+		
+		<div data-role="page" data-theme="c" id="cd1">
+			<div data-role="header" data-position="inline">
+				<h1>Music Of The Night [CD+DVD] - Andre Rieu</h1>
+			</div>
+			
+			<div data-role="content" data-theme="c">
+			
+				<img src="images/B00FKLZTU0.jpg">
+			
+				<p>Complete with the Johann Strauss Orchestra and the King of the Waltz himself, Andre Rieu's Music of the Night is a magical collection of well-known and loved musical classics, such as 'On My Own' (Les Miserables) and of course the spectacular 'Music of the Night' (Phantom of the Opera).</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="c" id="cd2">
+			<div data-role="header" data-position="inline">
+				<h1>NOW That's What I Call Music! 86</h1>
+			</div>
+			
+			<div data-role="content" data-theme="c">
+			
+				<img src="images/B00F963CTG.jpg">
+			
+				<p>(No description available)</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="c" id="cd3">
+			<div data-role="header" data-position="inline">
+				<h1>Midnight Memories [Deluxe Edition] - One Direction</h1>
+			</div>
+			
+			<div data-role="content" data-theme="c">
+			
+				<img src="images/B00F0N6CYA.jpg">
+			
+				<p>One Direction's third album features the worldwide hit 'Best Song Ever'. This deluxe version includes four extra tracks, handwritten messages from the band, and additional images.</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="c" id="cd4">
+			<div data-role="header" data-position="inline">
+				<h1>The Marshall Mathers LP 2 - Eminem</h1>
+			</div>
+			
+			<div data-role="content" data-theme="c">
+			
+				<img src="images/B00FKAA4DS.jpg">
+			
+				<p>The Marshall Mathers LP 2 is the eighth studio album from trailblazing rapper Eminem. The album features guest appearances from singers Skylar Grey, Rihanna, and Fun frontman Nate Ruess, with the only other rapper appearing on the album being Eminem's Aftermath label-mate Kendrick Lamar.</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+
+		<div data-role="page" data-theme="c" id="cd5">
+			<div data-role="header" data-position="inline">
+				<h1>Reflektor - Arcade Fire</h1>
+			</div>
+			
+			<div data-role="content" data-theme="c">
+			
+				<img src="images/B00F1CRRIU.jpg">
+			
+				<p>Reflektor is the fourth studio album by Canadian indie rock band Arcade Fire. A double album, Reflektor was produced by former LCD Soundsystem frontman James Murphy, regular Arcade Fire producer Markus Dravs and the band itself.</p>
+				
+				<p><a href="#home" data-transition="slide">Back</a></p>
+			
+			</div>
+			
+			<div data-role="footer">
+				<h4>&copy; 2013 Colin O'Sullivan</h4>
+			</div>
+		</div>
+	</body>
+</html>
